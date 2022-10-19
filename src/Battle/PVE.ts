@@ -10,23 +10,14 @@ class PVE extends Battle {
     this.environment = environment;
   }
 
-  receiveDamage(attackPoints: number): number {
-    const damage = attackPoints - this.player.defense;
-    if (damage > 0) this.player.lifePoints -= damage;
-    if (this.player.lifePoints <= 0) this.player.lifePoints = -1;
-    return this.player.lifePoints;
-  }
-
-  attack(enemy: Fighter): void {
+  fight(): number {
     this.environment.forEach((e) => {
       while (this.player.lifePoints !== -1 && e.lifePoints !== -1) {
-        enemy.receiveDamage(e.strength);
+        e.attack(this.player);
+        this.player.attack(e);
       }
     });
-  }
 
-  fight(): number {
-    this.attack(this.player);
     return this.player.lifePoints === -1 ? -1 : 1;
   }
 }

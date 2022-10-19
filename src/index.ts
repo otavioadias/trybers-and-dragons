@@ -8,6 +8,10 @@ const player1 = new Character('Kirito');
 const player2 = new Character('Asuna');
 const player3 = new Character('Klein');
 player1.levelUp();
+player1.levelUp();
+player1.levelUp();
+player1.levelUp();
+player1.levelUp();
 
 // Monster
 const monster1 = new Monster();
@@ -21,7 +25,7 @@ const pve = new PVE(player1, [monster1, monster2]);
 
 // Run Battles
 const runBattles = (battles: Array<Battle>) => 
-  battles.map((battle) => console.log(battle.fight()));
+  battles.map((battle) => battle.fight());
 
 export { 
   player1, 
