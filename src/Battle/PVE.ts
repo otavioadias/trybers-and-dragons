@@ -18,7 +18,11 @@ class PVE extends Battle {
   }
 
   attack(enemy: Fighter): void {
-    this.environment.forEach((e) => enemy.receiveDamage(e.strength));
+    this.environment.forEach((e) => {
+      while (this.player.lifePoints !== -1 && e.lifePoints !== -1) {
+        enemy.receiveDamage(e.strength);
+      }
+    });
   }
 
   fight(): number {
