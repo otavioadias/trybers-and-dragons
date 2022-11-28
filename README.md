@@ -1,13 +1,42 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Trybers and Dragons 🐉
+O projeto aplica conhecimentos em princípios da arquitetura SOLID e os princípios de POO em uma estrutura de jogos de interpretação de papéis, mais conhecidos como jogos RPG (Role Playing Game).
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+# Rodar na máquina
+- Clone o repositório:
+    * `git clone git@github.com:otavioadias/trybers-and-dragons.git`
+- Entre na pasta do repositório que você acabou de clonar:
+    * `cd trybers-and-dragons`
+- Instale as dependências:
+    * `npm install`
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# Rodando no Docker 🐋
+
+Com Docker:
+- Rode o serviço node com o comando:
+    * `docker-compose up -d`
+
+- Esse serviço irá inicializar um container chamado trybers_and_dragons.
+- A partir daqui você pode rodar o container trybers_and_dragons via CLI ou abri-lo no VS Code.
+- Use o comando:
+    * `docker exec -it trybers_and_dragons bash`
+
+- Ele te dará acesso ao terminal interativo do container criado pelo compose, que está rodando em segundo plano.
+- Instale as dependências com `npm install`
+
+# Habilidades
+
+- O conhecimento dos pilares da Programação Orientada a Objetos: Herança, Abstração, Encapsulamento e Polimorfismo.
+
+- A habilidade de criar e utilizar Interface;
+
+- A habilidade de utilizar Composição;
+
+- Implementar, em TypeScript, Classes, Instâncias, Atributos, Métodos e Objetos;
+
+- O conhecimento e aplicação dos princípios SOLID.
+
+# Stacks
+- TypeScript
+- Docker
+- POO
+- SOLID
